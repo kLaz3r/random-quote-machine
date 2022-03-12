@@ -1,0 +1,71 @@
+.Quote {
+  padding: 2rem 2rem;
+  background-color: white;
+  border-radius: 15px;
+  display: block;
+  margin: 0 2rem;
+  width: 40rem;
+  .QuoteText {
+    display: block;
+    color: black;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2rem;
+    .Text {
+      margin: 0.5rem 0;
+      i {
+        margin-right: 0.3rem;
+      }
+    }
+    .Author {
+      text-align: right;
+      font-weight: 100;
+      font-size: 1.5rem;
+    }
+  }
+  .Buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .SocialButtons {
+      a {
+        &:hover {
+          opacity: 0.7;
+        }
+        background-color: black;
+        border: none;
+        outline: none;
+        padding: 0.5rem 0.7rem;
+        border-radius: 10px;
+        margin: 0 0.2rem;
+        cursor: pointer;
+        i {
+          color: white;
+          font-size: 1.3rem;
+        }
+      }
+    }
+    .NewQuoteButton {
+      button {
+        &:hover {
+          opacity: 0.7;
+        }
+
+        background-color: black;
+        border: none;
+        outline: none;
+        padding: 0.6rem 0.8rem;
+        border-radius: 10px;
+        margin: 0 0.2rem;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media (max-width: 800px) {
+  .Quote {
+    width: 70%;
+  }
+}
